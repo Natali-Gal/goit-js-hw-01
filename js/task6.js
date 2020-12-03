@@ -1,4 +1,4 @@
-let total = 0;
+ let total = 0;
 while (true) {
    let input = prompt('Введите число');
 
@@ -7,7 +7,7 @@ while (true) {
        break;
    }
 
-   input = Number(imput);
+   input = Number(input);
 
    const notNumber = Number.isNaN(input);
 
@@ -18,17 +18,5 @@ while (true) {
 
    total += input;
 }
-alert(`Общая сумма чисел равна ${total}`);
+alert(`Общая сумма чисел равна ${total}`); 
 
-
-/*let input;
-let total = 0;
-do {
-  input = prompt('Введите число');
-if (Number.isInteger(Number(input)) {
-  total += Number(input);
-} else {
-  alert(`Было введено не число, попробуйте еще раз`);
-  }
-} while (input !== null);
-alert(`Общая сумма чисел равна ${total}`);*/
