@@ -9,10 +9,10 @@ let message;
 
 if (userInput === null) {
     message = 'Отменено пользователем!';
-    console.log(message);
+    
 } else if (userInput === ADMIN_PASSWORD) {
     message = 'Добро пожаловать!'
-    console.log(message);
+    
 } else {
     message = 'Доступ запрещен, неверный пароль!'
     console.log(message);

@@ -1,22 +1,13 @@
- let total = 0;
-while (true) {
-   let input = prompt('Введите число');
+let input;
+let total = 0;
 
-   if (input === null) {
-       console.log ('Отменено пользователем');
-       break;
-   }
+do {
+  input = prompt('Введите число');
+  if (isNaN(input)) {
+    alert('Было введено не число, попробуйте еще раз');
+  } else {
+    total += Number(input);
+  }
+} while (input !== null);
 
-   input = Number(input);
-
-   const notNumber = Number.isNaN(input);
-
-   if (notNumber) {
-       alert(`Было введено не число, попробуйте еще раз`);
-       continue;
-   }
-
-   total += input;
-}
-alert(`Общая сумма чисел равна ${total}`); 
-
+alert(`Общая сумма чисел равна ${total}`);
