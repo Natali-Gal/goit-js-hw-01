@@ -15,5 +15,6 @@ if (userInput === null) {
     
 } else {
     message = 'Доступ запрещен, неверный пароль!'
-    console.log(message);
+    
 } 
+console.log(message);
